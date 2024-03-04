@@ -21,22 +21,16 @@ const Contact = () => {
 
   const sendForm = async (formData) => {
     try {
-      if (!currentUser || !currentUser._id) {
-        console.error("User information not available.");
-        setMessage("An error occurred, message not sent");
-        return;
-      }
+     
 
-      console.log("Sending form data:", formData);
-
-      const apiResponse = await fetch("/api/contact/contact", {
+      const apiResponse = await fetch("https://project-2-b7bx.onrender.com/api/contact/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           ...formData,
-          userRef: currentUser._id,
+          // userRef: currentUser._id,
         }),
       });
 

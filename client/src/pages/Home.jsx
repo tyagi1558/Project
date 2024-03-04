@@ -83,7 +83,7 @@ const Home = () => {
             </div>
           </form>
         </div>
-        <div className="max-w-[768px] h-[320px] w-full m-auto relative group lg:max-w-[968px] lg:h-[480px]">
+        {/* <div className="max-w-[768px] h-[320px] w-full m-auto relative group lg:max-w-[968px] lg:h-[480px]">
           <div 
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
             className="w-full h-full rounded-xl bg-black/30 bg-center bg-cover duration-500"
@@ -99,7 +99,7 @@ const Home = () => {
             </svg>
           </div>
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/30 rounded-xl"></div>
-        </div>
+        </div> */}
       </div>
     </section>
     <ListingsType />

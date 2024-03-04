@@ -11,7 +11,7 @@ export default function ContactLandlord({ listing }) {
     useEffect(() => {
         const fetchLandlord = async () => {
           try {
-            const res = await fetch(`/api/user/${listing.userRef}`);
+            const res = await fetch(`https://project-2-b7bx.onrender.com/api/user/${listing.userRef}`);
             const data = await res.json();
             setLandlord(data);
           } catch (error) {
