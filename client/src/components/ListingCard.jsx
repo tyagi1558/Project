@@ -21,9 +21,8 @@ export default function ListingCard({ listing }) {
                 <div className="card-content pt-5 pb-6 px-5">
                     <p className='text-gray-900 text-xl font-semibold'>
                         $
-                        {listing.offer
-                        ? listing.discountPrice.toLocaleString('en-US')
-                        : listing.regularPrice.toLocaleString('en-US')}
+                        {listing.regularPrice
+                       }
                         <span className="text-sm text-gray-500 font-medium">
                             {listing.type === 'rent' ? ' /month' : ' /sale'} 
                         </span>

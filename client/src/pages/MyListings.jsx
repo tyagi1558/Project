@@ -11,7 +11,7 @@ const MyListings = () => {
     const handleShowListings = async () => {
         try {
           setShowListingsError(false);
-          const res = await fetch(`https://project-2-b7bx.onrender.com/api/user/listings/${currentUser._id}`);
+          const res = await fetch(`/api/user/listings/${currentUser._id}`);
           const data = await res.json();
           if (data.success === false) {
             setShowListingsError(true);
@@ -26,7 +26,7 @@ const MyListings = () => {
 
     const handleListingDelete = async (listingId) => {
         try {
-          const res = await fetch(`https://project-2-b7bx.onrender.com/api/listing/delete/${listingId}`, {
+          const res = await fetch(`/api/listing/delete/${listingId}`, {
             method: 'DELETE',
           });
           const data = await res.json();
